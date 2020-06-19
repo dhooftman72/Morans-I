@@ -47,7 +47,7 @@ if bts >= 100
     if matlabpool('size') ~= 0
         matlabpool close
     end
-    matlabpool open Full
+    matlabpool open
 end
 parfor x = 1:bts
     VarInB = VarIn((randperm(size)));        %#ok<PFBNS>
