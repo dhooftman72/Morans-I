@@ -25,7 +25,6 @@ Morans_I = moransCalc(wij,VarIn,size);
 [Varsigma,Varmu] = zshuffle(wij,VarIn,size,bts);
 % calculate significance
 [~,PValue,~,ZValue] = ztest(Morans_I,Varmu,Varsigma);
-save('all')
 end
 
 function wij = weightedFunc(Dis,MaxD,size)
